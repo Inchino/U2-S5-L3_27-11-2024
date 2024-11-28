@@ -4,51 +4,131 @@
   box-sizing: border-box;
 }
 
-#container{
-    display: flex;
+header{
+  float: left;
+  width: 20%;
+  height: 134vh;
+  margin-right: 20px;
 }
 
-header {
+#logo{
+  width: 40px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+button span{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav{
+  height: 100%;
   display: flex;
-  width: 15%;
-  height: 100vh;
+  flex-direction: column;
+  background-color: #fef7e2;
+}
+
+nav div{
+  margin: 1rem 0;
+  text-align: center;
+}
+
+button{
+  width: 200px;
+  font-size: 20px;
+  border-radius: 40px;
+  padding: 1rem;
+  background-color:  #ffdf7e;
+  border-style: none;
+}
+
+h1, h2{
+  padding: 20px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.cardWrap{
+  width: 15vw;
+  min-width: 250px;
+  min-height: 40vh;
+
+  background-color: #fef7e2;
+  border-radius: 55px;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cardWrap .card{
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  margin-right: 30px;
+
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-nav {
-  background-color: #fef7e2;
-  height: 100%;
+.cardWrap div{
+  width: 100%;
 }
 
-nav button {
-  border-style: none;
-  width: 150px;
-  height: 80px;
-  border-radius: 30px;
-  background-color: #ffdf7e;
-  margin: 0 20px 0 20px;
-}
-
-nav button:first-child {
-  margin-top: 30px;
-  gap: 10px
-}
-
-.card_wrap{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.card, .cardButton, .articleText, h1, h2, div button{
+  color: #742305;
 }
 
 .card{
-    flex-basis: 30%;
-    flex-grow: 1;
-    flex-shrink: 1;
+  display: flex;
+  align-items: center;
 }
 
-.card img{
-    width: 200px;
+.cardText{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
 }
+
+.price{
+  flex-shrink: 2;
+}
+
+.card .divBtn{
+  text-align: center;
+}
+
+.cardButton{
+  width: 60%;
+  height: 90%;
+  background-color: #ffdf7e;
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap-reverse;
+
+  gap: 30px;
+
+  background-color: #fef7e2;
+  border-radius: 30px;
+  padding: 30px;
+}
+article img {
+  flex: 1 1 500px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+article .articleText {
+  flex: 1 1 400px;
+  line-height: 1.4;
+}
+
+
+
